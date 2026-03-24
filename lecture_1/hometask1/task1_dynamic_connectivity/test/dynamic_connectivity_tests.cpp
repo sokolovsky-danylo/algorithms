@@ -19,7 +19,7 @@ protected:
     }
 };
 
-TEST_F(DynamicConnectivityTest, Initialization) {
+TEST_F(DynamicConnectivityTest, Initialization) { //1
 
     for (int i = 0; i < 10; ++i) {
         EXPECT_EQ(dc.id[i], i);

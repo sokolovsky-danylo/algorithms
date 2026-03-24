@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 
-#define CAPACITY 100000
+#define CAPACITY 100000//1
 
 
 typedef struct {

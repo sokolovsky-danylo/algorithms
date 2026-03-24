@@ -4,8 +4,8 @@
 CXX = g++
 CXXFLAGS = -std=c++20 -Wall -I/usr/include/gtest -I$(SRC_DIR)
 
-# Google Test libraries
-GTEST_LIBS = -lgtest -lgtest_main
+# Google Test libraries lol
+GTEST_LIBS = -lgtest -lgtest_main 
 
 # Paths
 SRC_DIR = ../src

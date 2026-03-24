@@ -3,7 +3,7 @@
 void init_dynamic_connectivity(DynamicConnectivity* dc, int n) {
     for (int i = 0; i < n; i++){
         dc->id[i] = i;  //each element initialy refers to itself
-        dc->sz[i] = 1;  //initially each tree has size of 1
+        dc->sz[i] = 1;  //initially each tree has size of 1j
     }
 }
 
