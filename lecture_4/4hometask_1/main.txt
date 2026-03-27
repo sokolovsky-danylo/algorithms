@@ -1,0 +1,21 @@
+Sorting Algorithm Benchmark Results
+Compiled with: gcc -O0 -Wall -o main sort.c main.c
+
+Random input (ms)
+Algorithm               N=100     N=1000    N=10000   N=100000
+-----------------------------------------------------------
+insertion_sort          0.094      8.395    595.289  71866.082
+selection_sort          0.063      3.736    423.933  45749.774
+shell_sort              0.056      0.808     14.076    176.863
+
+Already-sorted input (ms)
+Algorithm               N=100     N=1000    N=10000   N=100000
+-----------------------------------------------------------
+insertion_sort          0.003      0.010      0.091      1.100
+selection_sort          0.048      4.687    449.547  39739.896
+shell_sort              0.006      0.057      0.655      8.804
+
+Notes:
+- insertion_sort: adaptive O(N^2) avg, O(N) best case
+- selection_sort: non-adaptive O(N^2) always 
+- shell_sort:     O(N^(3/2)) with Knuth 3x+1 gap
