@@ -1,0 +1,15 @@
+Tilde notation (~)
+Time complexity: n 
+Space complexity: 2 - two variables were created
+
+Theta notation (Θ)  (average case)
+Time complexity: n
+Space complexity: 1
+
+Omega notation (Ω)  (best case)
+Time complexity: n
+Space complexity: 1
+
+Big-O notation (O)  (worst case)
+Time complexity: n
+Space complexity: 1
