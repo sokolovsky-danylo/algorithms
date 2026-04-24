@@ -31,12 +31,14 @@ int main() {
         printf("no path found with BFS.\n");
     }
 
-    printf("\nRunning DFS \n");
-    vertex_t *path_dfs = GraphShortestDFS(g, start_node, end_nodes, num_ends, &path_len_dfs, &visited_dfs);
-    if (path_dfs) {
-        printf("DFS path found, length: %d, nodes visited: %d\n", path_len_dfs, visited_dfs);
-        free(path_dfs);
-    } else {
+printf("\nRunning DFS \n");
+vertex_t *path_dfs = GraphShortestDFS(g, start_node, end_nodes, num_ends, &path_len_dfs, &visited_dfs);
+if (path_dfs) {
+    printf("DFS path found, length: %d, nodes visited: %d\n", path_len_dfs, visited_dfs);
+    MazePrintWithPath(maze, path_dfs, path_len_dfs); // Додай цей рядок
+    free(path_dfs);
+}
+     else {
         printf("no path found with DFS.\n");
     }
 

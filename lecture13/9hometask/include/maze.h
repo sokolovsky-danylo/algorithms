@@ -8,7 +8,7 @@
 #define PASSAGE '.'
 #define PATH '*'
 #define SOURCE 'S'
-#define DEST 'D'
+#define DEST 'L'
 #define TELEPORT 'T'
 
 typedef struct {
@@ -16,17 +16,12 @@ typedef struct {
     int y;
 } pair_t;
 
-typedef struct Maze Maze;
+typedef struct Maze Maze;   
 typedef Maze *MazePtr;
-
 MazePtr MazeInit(int size, float obstacles, int num_lamps, int num_teleport_pairs);
 void MazePrint(MazePtr maze);
 void MazeDestroy(MazePtr maze);
-
-// Converts the Maze grid to a Graph object.
 GraphPtr MazeToGraph(MazePtr m, vertex_t *start_node, vertex_t **end_nodes, int *num_ends);
-
-// Utility to convert 1D graph path back to 2D coordinates for printing
 void MazePrintWithPath(MazePtr m, vertex_t *path, int length);
 
 #endif
