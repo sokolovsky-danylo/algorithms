@@ -1,0 +1,4 @@
+1.  libstatistical_measures_dynamic.so більша за .а файл
+2.  main_static більший
+    main_dynamic менший
+3. вивід ідентичний
