@@ -5,7 +5,7 @@
 
 typedef struct Queue Queue; //structure declaration
 
-Queue* QueueInit(int capacity);     //initialization of the queue with given capacity
+Queue* QueueInit(int capacity);     //initialization of the queue with given capacit
 
 void QueueEnqueue(Queue* q, vertex_t v);    //add element to the end
 vertex_t QueueDequeue(Queue* q);            //take element from the front

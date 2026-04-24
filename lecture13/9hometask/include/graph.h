@@ -20,4 +20,4 @@ vertex_t *GraphShortestDFS(const GraphPtr g, vertex_t start, vertex_t *ends, int
 
 vertex_t *GraphShortestBFS(const GraphPtr g, vertex_t start, vertex_t *ends, int num_ends, int *path_len, int *visited_count);
 //return shortest path from start to any of the end vertices using BFS
-#endif
+#endif  // GRAPH_H

@@ -28,7 +28,7 @@ void QueueEnqueue(Queue* q, vertex_t v) {       //add element to the end of the 
 
 vertex_t QueueDequeue(Queue* q) {               //take element from the front of the queue
     if (q->size == 0) return -1;                //if the queue is empty return -1
-    vertex_t item = q->data[q->front];          //store the front element to return
+    vertex_t item = q->data[q->front];          //store the front element to retur
     q->front = (q->front + 1) % q->capacity;    //move front index to the next position
     q->size--;                                  //decrement the size of the queue     
     return item;

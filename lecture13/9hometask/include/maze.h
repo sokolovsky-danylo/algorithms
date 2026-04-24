@@ -24,4 +24,4 @@ void MazeDestroy(MazePtr maze);
 GraphPtr MazeToGraph(MazePtr m, vertex_t *start_node, vertex_t **end_nodes, int *num_ends);
 void MazePrintWithPath(MazePtr m, vertex_t *path, int length);
 
-#endif
+#endif// MAZE_H

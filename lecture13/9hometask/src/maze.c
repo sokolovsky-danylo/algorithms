@@ -14,7 +14,7 @@ struct Maze {      //maze structure
     pair_t *lamps;  //array of lamp coordinates (end vertices)
     int num_lamps;  //number of lamps (end vertices)
     pair_t *teleports;  //array of teleport coordinates (additional task 2)
-    int num_teleports;  //number of teleports (must be even, pairs of teleports)
+    int num_teleports;  //number of teleports (must be even, pairs of teleports))
 };
 
 MazePtr MazeInit(int size, float obstacles_density, int num_lamps, int num_teleport_pairs) {  
@@ -54,7 +54,7 @@ MazePtr MazeInit(int size, float obstacles_density, int num_lamps, int num_telep
         m->lamps[i].y = rand() % size;
         m->grid[m->lamps[i].x][m->lamps[i].y] = DEST;
     }
-    //additional task 2: random placement of teleports (must be in pairs)
+    //additional task 2: random placement of teleports (must be in pairs
     for (int i = 0; i < m->num_teleports; i++) {
         m->teleports[i].x = rand() % size;
         m->teleports[i].y = rand() % size;

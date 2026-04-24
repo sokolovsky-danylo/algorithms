@@ -8,6 +8,5 @@ all: $(EXEC)
 
 $(EXEC): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^
-
 clean:
 	rm -f src/*.o demo/*.o $(EXEC)

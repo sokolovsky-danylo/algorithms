@@ -38,7 +38,7 @@ GraphPtr GraphInit(int num_vertices) {              //initialize graph with give
 void GraphAddEdge(GraphPtr g, vertex_t v, vertex_t w) { //add undirected edge between v and w
     if (v < g->V && w < g->V) {                         //check if vertices are valid
         add_adjacent_vertex(&g->adj[v], w);             //add w to v's adjacency list
-        add_adjacent_vertex(&g->adj[w], v);             //add v to w's adjacency list 
+        add_adjacent_vertex(&g->adj[w], v);             //add v to w's adjacency lis
         g->E++;                                         //increment edge count                         
     }
 }
